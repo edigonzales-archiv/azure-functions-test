@@ -82,6 +82,10 @@ Vagrant.configure("2") do |config|
     apt-get install -y xauth zip
     apt-get install -y ifupdown
     apt-get install -y fonts-liberation
+    sudo add-apt-repository -y ppa:x2go/stable
+    sudo apt-get update
+    sudo apt-get install -y x2goserver x2goserver-xsession    
+    apt-get install -y firefox
     sudo apt-get install -y openjdk-8-jdk
     wget http://www.eu.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
     tar -xvzf apache-maven-3.6.0-bin.tar.gz
